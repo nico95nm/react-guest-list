@@ -1,9 +1,9 @@
 Create a guest list app using React that allows for:
 
-- [ ] Adding a guest using separate first name and last name fields
-  - [ ] The first name input needs to have a related label containing `First name`
-  - [ ] The last name input needs to have a related label containing `Last name`
-  - [ ] A guest should be created upon pressing <kbd>Return</kbd> in the last name input
+- [-] Adding a guest using separate first name and last name fields
+  - [-] The first name input needs to have a related label containing `First name`
+  - [-] The last name input needs to have a related label containing `Last name`
+  - [-] A guest should be created upon pressing <kbd>Return</kbd> in the last name input
   - [ ] After a guest is created, both fields need to be cleared again
   - [ ] Newly created guests should be set as **not attending** by default
   - [ ] Each guest (all content and form fields) should be contained inside a div element with the attribute `data-test-id="guest"`
@@ -49,3 +49,12 @@ Some features are similar to [this example](https://todomvc.com/examples/react/#
 - [ ] Project has been [imported into CodeSandbox](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#codesandbox) and a comment has been added below with the sandbox URL
 - [ ] [Drone bot](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
 - [ ] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-git-github/#writing-commit-messages))
+
+### What to do baby steps
+
+An input that I write text it wont be submited until I fill second input
+
+name last name with submit
+boolean true/false
+
+remove button

@@ -1,8 +1,12 @@
-/* eslint-disable react/style-prop-object */
+/* eslint-disable upleveled/no-unnecessary-html-attributes */
 /* eslint-disable no-restricted-syntax */
 import './App.module.scss';
+import { useState } from 'react';
 
 export default function App() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [label, setLabel] = useState('');
   return (
     <>
       <section className="ContainerOne">
@@ -51,28 +55,43 @@ export default function App() {
         <div>
           <p className="Form">
             First Name:
-            <input />
+            <input
+              type="name"
+              placeholder="Fist Name"
+              onChange={(event) => setFirstName(event.currentTarget.value)}
+            />
           </p>
           <p>
             Last Name:
-            <input />
+            <input
+              type="name"
+              placeholder="Last Name"
+              onClick={(event) => setLastName(event.currentTarget.value)}
+            />
           </p>
         </div>
         <div>
-          <button>Submit</button>
+          <button
+            onClick={() => {
+              setLabel(`${firstName} ${lastName}`);
+              console.log(firstName, lastName);
+            }}
+          >
+            Submit
+          </button>
         </div>
       </section>
       <table>
         <tr>
           <td>#</td>
           <td>Name</td>
-          <td>Attendance</td>
+          <td>Attending Status</td>
           <td>Note</td>
           <td> </td>
         </tr>
         <tr>
           <td>1.</td>
-          <td>Nikola Miletic</td>
+          <td>{label}</td>
           <td>Attending/Not Attending</td>
           <td>He love meat</td>
           <td>
