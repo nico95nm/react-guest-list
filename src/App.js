@@ -7,6 +7,8 @@ export default function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [label, setLabel] = useState('');
+  const [box, setBox] = useState();
+
   return (
     <>
       <section className="ContainerOne">
@@ -65,8 +67,9 @@ export default function App() {
             Last Name:
             <input
               type="name"
+              id="lastName"
               placeholder="Last Name"
-              onClick={(event) => setLastName(event.currentTarget.value)}
+              onChange={(event) => setLastName(event.currentTarget.value)}
             />
           </p>
         </div>
@@ -92,7 +95,22 @@ export default function App() {
         <tr>
           <td>1.</td>
           <td>{label}</td>
-          <td>Attending/Not Attending</td>
+          <td>
+            <form>
+              {JSON.stringify(box)}
+              <label>
+                <input
+                  checked={box}
+                  type="checkbox"
+                  onChange={(event) => {
+                    setBox(event.currentTarget.checked);
+                    console.log(event.currentTarget.checked);
+                  }}
+                />
+                Attenting
+              </label>
+            </form>
+          </td>
           <td>He love meat</td>
           <td>
             <button>Remove</button>
