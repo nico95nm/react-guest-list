@@ -4,7 +4,7 @@ Create a guest list app using React that allows for:
   - [-] The first name input needs to have a related label containing `First name`
   - [-] The last name input needs to have a related label containing `Last name`
   - [-] A guest should be created upon pressing <kbd>Return</kbd> in the last name input
-  - [ ] After a guest is created, both fields need to be cleared again
+  - [] After a guest is created, both fields need to be cleared again
   - [ ] Newly created guests should be set as **not attending** by default
   - [ ] Each guest (all content and form fields) should be contained inside a div element with the attribute `data-test-id="guest"`
 - [ ] Deleting a guest with a button that **either**:

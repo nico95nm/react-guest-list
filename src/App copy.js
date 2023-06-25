@@ -17,6 +17,7 @@ export default function App() {
     },
   ];
   const [users, setUsers] = useState(guest);
+  console.log(users);
 
   return (
     <>
@@ -56,10 +57,8 @@ export default function App() {
         <div>
           <button
             onClick={() => {
-              const newUser = [...users];
-
               setLabel(`${firstName} ${lastName}`);
-              // console.log(firstName, lastName);
+              console.log(firstName, lastName);
             }}
           >
             Submit
@@ -77,8 +76,6 @@ export default function App() {
         <tr>
           <td>1.</td>
           <td>{label}</td>
-          <td>{label}</td>
-
           <td>
             <form>
               {JSON.stringify(box)}
@@ -95,7 +92,7 @@ export default function App() {
               </label>
             </form>
           </td>
-          <td>j</td>
+          <td>He love meat</td>
           <td>
             <button>Remove</button>
           </td>
